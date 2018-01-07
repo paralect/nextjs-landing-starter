@@ -1,0 +1,8 @@
+pipeline:
+  run-tests:
+    image: node:8.9
+    commands:
+      - ./bin/drone-tests.sh
+    when:
+      status: [ failure, success ]
+      event: [ pull_request, push ]
