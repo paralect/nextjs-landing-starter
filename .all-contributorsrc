@@ -19,6 +19,16 @@
         "ideas",
         "review"
       ]
+    },
+    {
+      "login": "ezhivitsa",
+      "name": "Evgeny Zhivitsa",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/6461311?v=4",
+      "profile": "https://github.com/ezhivitsa",
+      "contributions": [
+        "code",
+        "review"
+      ]
     }
   ]
 }
