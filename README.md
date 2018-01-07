@@ -4,6 +4,7 @@
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Build Status](http://product-stack-ci.paralect.com/api/badges/paralect/nextjs-landing-starter/status.svg)](http://product-stack-ci.paralect.com/paralect/nextjs-landing-starter)
+[![David Dependancy Status](https://david-dm.org/paralect/nextjs-landing-starter.svg)](https://david-dm.org/paralect/nextjs-landing-starter)
 
 [![Watch on GitHub](https://img.shields.io/github/watchers/paralect/nextjs-landing-starter.svg?style=social&label=Watch)](https://github.com/paralect/nextjs-landing-starter/watchers)
 [![Star on GitHub](https://img.shields.io/github/stars/paralect/nextjs-landing-starter.svg?style=social&label=Stars)](https://github.com/paralect/nextjs-landing-starter/stargazers)
