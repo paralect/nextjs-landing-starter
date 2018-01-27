@@ -1,5 +1,5 @@
 {
-  "name": "next-landing-starter",
+  "name": "nextjs-landing-starter",
   "version": "1.0.1",
   "description": "Common landing website starter driven by next.js",
   "main": "index.js",
@@ -12,9 +12,11 @@
     "start": "NODE_ENV=production npm run next-server",
     "next-server": "node ./src/server/app.js",
     "test": "npm run lint",
-    "lint": "eslint --fix ./src"
+    "lint": "eslint --fix ./src",
+    "add-contributor": "all-contributors add",
+    "generate-contributors": "all-contributors generate"
   },
-  "author": "",
+  "author": "Paralect",
   "license": "MIT",
   "dependencies": {
     "@paralect/common-logger": "0.1.10",
@@ -31,6 +33,7 @@
   },
   "devDependencies": {
     "@paralect/eslint-config": "0.1.5",
+    "all-contributors-cli": "^4.10.0",
     "babel-eslint": "8.2.1",
     "babel-plugin-inline-react-svg": "0.5.2",
     "babel-plugin-module-resolver": "3.0.0",
