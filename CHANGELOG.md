@@ -1,3 +1,7 @@
+## v1.0.2 (2018-01-31)
+
+- Fix start script
+
 ## v1.0.1 (2018-01-27)
 
 - Update npm dependencies
