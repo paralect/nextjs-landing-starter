@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import classNames from 'classnames/bind';
+import classnames from 'classnames';
+
+import styles from './styles.css';
 
 const Button = ({
   className,
@@ -11,32 +13,11 @@ const Button = ({
   return (
     <button
       action={action}
-      className={classNames(className, {
-        loading: isLoading,
+      className={classnames(className, {
+        [styles.loading]: isLoading,
       })}
       disabled={isLoading}
     >
-      <style jsx>{`
-        button {
-          transition: 0.5s;
-          border-radius: 5px;
-          cursor: pointer;
-          color: white;
-          padding: 15px 10px;
-          width: 100%;
-
-          &[disabled] {
-            cursor: default;
-          }
-
-          &.loading {
-            animation: Gradient 1s ease-in-out infinite;
-            background-position: right center;
-            opacity: .8;
-          }
-        }`}
-
-      </style>
       {children}
     </button>
   );

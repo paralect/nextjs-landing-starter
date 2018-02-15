@@ -53,7 +53,7 @@ export default class Signin extends PureComponent {
     return (
       <Layout>
         <div className="auth page">
-          <style jsx>{`
+          {/* <style jsx>{`
             .page {
               & .panel {
                 width: 500px;
@@ -78,7 +78,7 @@ export default class Signin extends PureComponent {
                 }
               }
             }
-          `}</style>
+          `}</style> */}
 
           <div className="panel">
             <div className="form-wrap">

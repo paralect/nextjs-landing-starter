@@ -5,104 +5,33 @@ import classnames from 'classnames';
 
 import ArrowSvg from './arrow';
 
+import styles from './styles.css';
+
 const Header = ({ secondary }) => (
-  <nav className="nav">
-    <style jsx>{`
-      .nav {
-        width: 100%;
-        margin-top: 25px;
-        height: 50px;
-        color: var(--color-white);
-
-        & .menu {
-          max-width: var(--max-container-width);
-          display: flex;
-          justify-content: space-between;
-          width: 100%;
-          z-index: 1;
-          flex-flow: row wrap;
-          
-          & > .item {
-            & a {
-              color: white;
-              text-decoration: none;
-            }
-              
-            &.logo {
-              & img {
-                width: 132px;
-              }
-            }
-              
-            & > .links {
-              display: flex;
-              margin: 0;
-              padding: 0;
-              
-              & > .link {
-                color: var(--color-white);
-                list-style: none;
-                font-size: 18px;
-                padding: 0 27px;
-                line-height: 50px;
-                transition: color .1s ease;
-
-                &.login {
-                  background: linear-gradient(to right, rgba(90,97,241,0.9) 0%, #7a00ff 100%);
-                  border-radius: 5px;
-                  cursor: pointer;
-
-                  &.secondary {
-                    background: linear-gradient(to right, #18c76d 0%, #08af81 100%);
-                  }
-
-                  & a {
-                    display: flex;
-                  }
-
-                  & .text {
-                    color: var(--color-white);
-                    flex-shrink: 0;
-                  }
-
-                  & .arrow {
-                    stroke: white;
-                    transition: transform .5s ease;
-                    margin-left: 5px;
-                    transform: translateX(0px);
-                  }
-
-                  &:hover .arrow {
-                    transform: translateX(5px);
-                  }
-                }
-              }
-            }
-          }
-        }
-      }
-   `}</style>
-
-    <div className="container">
-      <div className="menu">
-        <div className="item logo">
+  <nav className={styles.nav}>
+    <div className={styles.container}>
+      <div className={styles.menu}>
+        <div className={classnames(styles.item, styles.logo)}>
           <Link href="/">
             <a href="/"> <img src="static/logo.png" alt="logo" /> </a>
           </Link>
         </div>
-        <div className="item">
-          <ul className="links">
-            <li className="link">
+        <div className={styles.item}>
+          <ul className={styles.links}>
+            <li className={styles.link}>
              About
             </li>
-            <li className="link">
+            <li className={styles.link}>
               Blog
             </li>
-            <li className={classnames('link', 'login', { secondary })}>
+            <li className={classnames(styles.link, styles.login, {
+              [styles.secondary]: secondary,
+            })}
+            >
               <Link prefetch href="/signin">
                 <a href="/signin">
-                  <span className="text">Log In</span>
-                  <div className="arrow"><ArrowSvg /></div>
+                  <span className={styles.text}>Log In</span>
+                  <div className={styles.arrow}><ArrowSvg /></div>
                 </a>
               </Link>
             </li>

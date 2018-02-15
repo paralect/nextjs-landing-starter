@@ -66,7 +66,7 @@ export default class Signup extends PureComponent {
     return (
       <Layout>
         <div className="auth page">
-          <style jsx>{`
+          {/* <style jsx>{`
             .page {
               @custom-media --navbar-height-reached (height <= 700px);
 
@@ -108,7 +108,7 @@ export default class Signup extends PureComponent {
                 }
               }
             }
-          `}</style>
+          `}</style> */}
 
           <div className="panel">
             {this.state.signupSuccess ? (

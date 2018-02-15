@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
 
+import classnames from 'classnames';
+
 import Error from '~/components/error';
 import Button from '~/components/button';
 import Layout from '~/layouts/main';
@@ -8,6 +10,8 @@ import { setFormValue } from '~/helpers';
 import { signin } from '~/resources/account/account.api';
 
 import config from '~/config';
+
+import styles from './styles.css';
 
 const { webUrl } = config;
 
@@ -48,63 +52,14 @@ export default class Signin extends PureComponent {
   render() {
     return (
       <Layout>
-        <div className="auth page">
-          <style jsx>{`
-            .page {
-              background-color: var(--color-brand);
-              @custom-media --navbar-height-reached (height <= 700px);
+        <div className={classnames(styles.auth, styles.page)}>
+          <div className={styles.panel}>
+            <img className={styles.greeting} alt="Welcome Back" src="/static/password.jpg" />
 
-              @media (--navbar-height-reached) {
-                padding-top: 20px;
-                align-items: flex-start;
-              }
-
-              & .panel {
-                width: 850px;
-
-                & img {
-                  min-width: 400px;
-                }
-
-                & .form-wrap {
-                  display: flex;
-                  flex-direction: column;
-                  padding: 0 30px;
-                  justify-content: center;
-                  align-items: center;
-                  width: 100%;
-                  height: 100%;
-
-                  & form {
-                    & .forgot {
-                      width: 100%;
-                      text-align: right;
-                    }
-
-                    & :global(button.signin) {
-                      /*https://github.com/zeit/styled-jsx/issues/273*/
-                      background: var(--button-primary-gradient);
-                      margin-top: var(--form-padding)
-                    }
-
-                    & .signup {
-                      width: 100%;
-                      text-align: center;
-                      margin-top: 2rem;
-                    }
-                  }
-                }
-              }
-            }
-          `}</style>
-
-          <div className="panel">
-            <img className="greeting" alt="Welcome Back" src="/static/password.jpg" />
-
-            <div className="form-wrap">
+            <div className={styles.formWrap}>
               <h2> Welcome Back! </h2>
 
-              <form className="form" onSubmit={this.submitSignin}>
+              <form className={styles.form} onSubmit={this.submitSignin}>
                 <input
                   key="email"
                   value={this.state.email}
@@ -112,7 +67,7 @@ export default class Signin extends PureComponent {
                   required
                   placeholder="Email"
                   type="email"
-                  className="input"
+                  className={styles.input}
                 />
                 <input
                   key="password"
@@ -121,19 +76,19 @@ export default class Signin extends PureComponent {
                   required
                   placeholder="Password"
                   type="password"
-                  className="input"
+                  className={styles.input}
                 />
 
                 <Error error={this.state.error} />
 
-                <div className="forgot">
+                <div className={styles.forgot}>
                   <Link href="/forgot-password">
                     <a href="/forgot-password">Forgot Password?</a>
                   </Link>
                 </div>
-                <div className="submit">
+                <div className={styles.submit}>
                   <Button
-                    className="signin"
+                    className={styles.signin}
                     action="submit"
                     primary
                     isLoading={this.state.isLoading}
@@ -142,7 +97,7 @@ export default class Signin extends PureComponent {
                   </Button>
                 </div>
 
-                <div className="signup">
+                <div className={styles.signup}>
                   <Link href="/signup">
                     <a href="/signup">Don&apos;t have an account? Sign Up</a>
                   </Link>

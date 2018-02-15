@@ -98,7 +98,7 @@ export default class ForgotPassword extends PureComponent {
     return (
       <Layout>
         <div className="auth page">
-          <style jsx>{`
+          {/* <style jsx>{`
             .page {
               & .panel {
                 width: 500px;
@@ -116,7 +116,7 @@ export default class ForgotPassword extends PureComponent {
                 }
               }
             }
-          `}</style>
+          `}</style> */}
 
           <div className="panel">
             <div className="form-wrap">
