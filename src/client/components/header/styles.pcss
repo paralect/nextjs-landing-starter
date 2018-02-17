@@ -1,10 +1,9 @@
-@import 'variables.css';
-@import 'container.css';
+@import 'variables.pcss';
 
 .nav {
   width: 100%;
   margin-top: 25px;
-  height: 50px;
+  min-height: 50px;
   color: var(--color-white);
 
   & .menu {
@@ -14,34 +13,35 @@
     width: 100%;
     z-index: 1;
     flex-flow: row wrap;
-    
+
     & > .item {
       & a {
         color: white;
         text-decoration: none;
       }
-        
+
       &.logo {
         & img {
           width: 132px;
+          display: block;
         }
       }
-        
+
       & > .links {
         display: flex;
         margin: 0;
         padding: 0;
-        
+
         & > .link {
           color: var(--color-white);
           list-style: none;
           font-size: 18px;
           padding: 0 27px;
           line-height: 50px;
-          transition: color .1s ease;
+          transition: color 0.1s ease;
 
           &.login {
-            background: linear-gradient(to right, rgba(90,97,241,0.9) 0%, #7a00ff 100%);
+            background: linear-gradient(to right, rgba(90, 97, 241, 0.9) 0%, #7a00ff 100%);
             border-radius: 5px;
             cursor: pointer;
 
@@ -60,9 +60,9 @@
 
             & .arrow {
               stroke: white;
-              transition: transform .5s ease;
+              transition: transform 0.5s ease;
               margin-left: 5px;
-              transform: translateX(0px);
+              transform: translateX(0);
             }
 
             &:hover .arrow {
@@ -73,4 +73,11 @@
       }
     }
   }
+}
+
+.container {
+  display: flex;
+  max-width: var(--max-container-width);
+  padding: var(--container-padding);
+  margin: 0 auto;
 }

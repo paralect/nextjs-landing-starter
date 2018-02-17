@@ -5,7 +5,7 @@ import classnames from 'classnames';
 
 import ArrowSvg from './arrow';
 
-import styles from './styles.css';
+import styles from './styles.pcss';
 
 const Header = ({ secondary }) => (
   <nav className={styles.nav}>

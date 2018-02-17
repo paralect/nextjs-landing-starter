@@ -5,7 +5,7 @@ import { withRouter } from 'next/router';
 
 import Header from '~/components/header';
 
-import styles from './styles.css';
+import styles from './styles.pcss';
 
 const Layout = ({ children, router }) => {
   const secondary = router.pathname.includes('/signup');

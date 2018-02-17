@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
-import styles from './styles.css';
+import styles from './styles.pcss';
 
 const Button = ({
   className,
@@ -13,7 +13,7 @@ const Button = ({
   return (
     <button
       action={action}
-      className={classnames(className, {
+      className={classnames(styles.button, className, {
         [styles.loading]: isLoading,
       })}
       disabled={isLoading}

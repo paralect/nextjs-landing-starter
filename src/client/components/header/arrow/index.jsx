@@ -1,7 +1,7 @@
 import React from 'react';
 import IconBase from 'react-icon-base';
 
-import styles from './styles.css';
+import styles from './styles.pcss';
 
 export default class FaHeart extends React.Component {
   render() {
