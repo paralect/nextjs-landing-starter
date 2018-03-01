@@ -1,14 +1,11 @@
 version: '3.3'  
 services:
-  redis:
-    command: redis
-    image: redis:4.0
-    ports:
-      - "6379:6379" # map port to none standard port, to avoid conflicts with locally installed redis.
-  web:
+  landing:
     build:
       context: "./"
       dockerfile: Dockerfile.dev
+    environment:
+      NODE_ENV: development
     volumes:
       - "./src:/app/src"
     ports:
