@@ -1,3 +1,7 @@
+## v2.0.1 (2018-03-17)
+
+- Fix error on forgot password page
+
 ## v2.0.0 (2018-03-17)
 
 - Use Next.js 5
