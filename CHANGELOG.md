@@ -1,3 +1,10 @@
+## v2.0.0 (2018-03-17)
+
+- Use Next.js 5
+- Use css modules and postcss instead of style jsx
+- Update npm dependencies
+- Update Node.js version
+
 ## v1.0.2 (2018-01-31)
 
 - Fix start script
