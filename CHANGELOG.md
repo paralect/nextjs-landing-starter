@@ -1,3 +1,8 @@
+## v2.0.2 (2018-04-08)
+
+- Fix inline svg files
+- Update style variables
+
 ## v2.0.1 (2018-03-17)
 
 - Fix error on forgot password page
