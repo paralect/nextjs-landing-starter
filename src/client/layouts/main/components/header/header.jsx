@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import classnames from 'classnames';
 
-import ArrowSvg from './arrow';
+import ArrowSvg from './components/arrow';
 
 import styles from './styles.pcss';
 
