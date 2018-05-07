@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
+import getConfig from 'next/config';
 
 import Error from '~/components/error';
 import Button from '~/components/button';
@@ -11,11 +12,11 @@ import Auth from '~/layouts/auth';
 import { setFormValue } from '~/helpers';
 import { signin } from '~/resources/account/account.api';
 
-import config from '~/config';
-
 import styles from './styles.pcss';
 
-const { webUrl } = config;
+const {
+  publicRuntimeConfig: { webUrl },
+} = getConfig();
 
 export default class Signin extends PureComponent {
   constructor(props) {

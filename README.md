@@ -1,5 +1,7 @@
 # ✨ Next.JS Landing Starter ✨
 
+[![Stack](https://raw.githubusercontent.com/paralect/stack/master/stack-component-template/stack.png)](https://github.com/paralect/stack)
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
@@ -15,9 +17,9 @@ Next.JS Landing Starter — is a [Next.JS](https://github.com/zeit/next.js) star
 
 ## Features
 
-* 😍 **Nice-looking** common basic templates for the main, login and signup pages with bindings to API. Styles are based on [PostCSS](https://github.com/postcss/postcss) with [cssnext](https://github.com/MoOx/postcss-cssnext) + [LostGrid](https://github.com/peterramsing/lost) via [styled-jsx](https://github.com/zeit/styled-jsx).
+* 😍 **Nice-looking** common basic templates for the main, login and signup pages with bindings to API. Styles are based on [PostCSS](https://github.com/postcss/postcss) with [cssnext](https://github.com/MoOx/postcss-cssnext) + [LostGrid](https://github.com/peterramsing/lost) via [css modules](https://github.com/zeit/next-plugins/tree/master/packages/next-css).
 * 🔥 **Hot reloading** with webpack
-* ⚡️ **Server side rendering** 
+* ⚡️ **Server side rendering**
 * 👮 **Secure** — separate client and server configuration to protect secure server-only items
 
 ## Getting Started

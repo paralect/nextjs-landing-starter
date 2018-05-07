@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import getConfig from 'next/config';
 
 import Button from '~/components/button';
 import Error from '~/components/error';
@@ -9,9 +10,12 @@ import Auth from '~/layouts/auth';
 
 import { setFormValue } from '~/helpers';
 import { signup } from '~/resources/account/account.api';
-import config from '~/config';
 
 import styles from './styles.pcss';
+
+const {
+  publicRuntimeConfig: { apiUrl },
+} = getConfig();
 
 export default class Signup extends PureComponent {
   constructor(props) {
@@ -63,7 +67,7 @@ export default class Signup extends PureComponent {
 
   render() {
     const devVerifyEmailLink = this.state._signupToken ?
-      `${config.apiUrl}/account/verifyEmail/${this.state._signupToken}` :
+      `${apiUrl}/account/verifyEmail/${this.state._signupToken}` :
       null;
 
     const devVerifyEmailLinkEl = devVerifyEmailLink && (
