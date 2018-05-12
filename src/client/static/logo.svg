@@ -1,8 +1,6 @@
 <svg viewBox="0 0 720 444" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <g id="Canvas" transform="translate(-291 335)">
-    <use xlink:href="#ship-rocket0_fill" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 693.612 -281.384)" fill="#FF8383"></use>
-    <use xlink:href="#ship-rocket0_fill" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 693.612 -281.384)" fill="#FF8383"></use>
-    <use xlink:href="#ship-rocket0_fill" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 693.612 -281.384)" fill="#FF8383"></use>
+    <use xlink:href="#ship-rocket_polygon" transform="matrix(1, 0, 0, 1, 291, -335)" fill="#FFFFFF"></use>
     <use xlink:href="#ship-rocket0_fill" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 693.612 -281.384)" fill="#FF8383"></use>
     <use xlink:href="#ship-rocket2_fill" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 605.385 -232.018)" fill="#FFC000"></use>
     <use xlink:href="#ship-rocket3_stroke" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 620.448 -175.779)" fill="#FFFFFF"></use>
@@ -47,6 +45,7 @@
     <use xlink:href="#ship-rocket22_stroke" transform="matrix(0.999391 -0.0348995 0.0348995 0.999391 366.56 31.3294)" fill="#E3E3E3"></use>
   </g>
   <defs>
+    <path id="ship-rocket_polygon" fill-rule="evenodd" d="M 713 0.5L 502.5 10.2L 501.9 41.4L 479.6 29L 273 142.2L 79.4 202.4L 119.2 272.7L 77.6 352.4L 166 359.9L 207.2 432.4L 377.5 286.9L 568.6 184.1L 569.3 156.6L 592.8 170.8Z"></path>
     <path id="ship-rocket0_fill" fill-rule="evenodd" d="M 76.1943 0L 4.18993 36.7376L 0 117.469L 67.8145 161.464L 139.82 124.727L 144.009 43.995L 76.1943 0Z"></path>
     <path id="ship-rocket1_stroke" d="M 44.0543 82.9142L 40.1567 88.7286L 50.5333 95.6845L 51.0484 83.2028L 44.0543 82.9142ZM 0 53.3828L -6.99405 53.0942L -7.15578 57.0132L -3.89768 59.1973L 0 53.3828ZM 2.20305 0L 6.10072 -5.81448L -4.2759 -12.7703L -4.791 -0.288636L 2.20305 0ZM 46.2574 29.5314L 53.2514 29.82L 53.4132 25.9009L 50.1551 23.7169L 46.2574 29.5314ZM 47.952 77.0997L 3.89768 47.5683L -3.89768 59.1973L 40.1567 88.7286L 47.952 77.0997ZM 6.99405 53.6714L 9.19709 0.288636L -4.791 -0.288636L -6.99405 53.0942L 6.99405 53.6714ZM -1.69463 5.81448L 42.3597 35.3458L 50.1551 23.7169L 6.10072 -5.81448L -1.69463 5.81448ZM 39.2633 29.2427L 37.0603 82.6255L 51.0484 83.2028L 53.2514 29.82L 39.2633 29.2427Z"></path>
     <path id="ship-rocket2_fill" fill-rule="evenodd" d="M 76.1946 0L 4.19057 36.7376L 0 117.469L 67.8148 161.464L 139.82 124.727L 144.009 43.995L 76.1946 0Z"></path>
