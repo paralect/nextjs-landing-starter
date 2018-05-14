@@ -1,32 +1,40 @@
 import React from 'react';
-import Link from 'next/link';
+import PropTypes from 'prop-types';
+import classnames from 'classnames';
+
+import Link from '~/components/link';
+
+import Logo from '~/static/logo.svg';
 
 import styles from './styles.pcss';
 
-const Footer = () => {
+const Footer = ({ state }) => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer>
-      <div>
-        © {currentYear} , All rights reserved
-      </div>
+    <div className={classnames(styles.wrap, styles[state])}>
+      <footer className={styles.footer}>
+        <div>
+          <Logo />
+          <div>© {currentYear}, All rights reserved</div>
+        </div>
 
-      <div className={styles.links}>
-        <Link prefetch href="/privacy-policy">
-          <a href="/privacy-policy">
+        <div className={styles.links}>
+          <Link prefetch href="/privacy-policy" className={styles.link}>
             Privacy
-          </a>
-        </Link>
+          </Link>
 
-        <Link prefetch href="/terms">
-          <a href="/terms">
+          <Link prefetch href="/terms" className={styles.link}>
             Terms
-          </a>
-        </Link>
-      </div>
-    </footer>
+          </Link>
+        </div>
+      </footer>
+    </div>
   );
+};
+
+Footer.propTypes = {
+  state: PropTypes.string.isRequired,
 };
 
 export default Footer;
