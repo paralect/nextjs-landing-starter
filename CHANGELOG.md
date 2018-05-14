@@ -1,3 +1,9 @@
+## v2.1.0 (2018-05-14)
+
+- Update design
+- Add "privacy policy" and "terms of service" pages
+- Update version of Next.js
+
 ## v2.0.2 (2018-04-08)
 
 - Fix inline svg files
