@@ -1,12 +1,18 @@
-version: '3.3'  
+version: '3.6'  
 services:
   landing:
     build:
       context: "./"
       dockerfile: Dockerfile.dev
+    networks:
+      - ship
     environment:
       NODE_ENV: development
     volumes:
       - "./src:/app/src"
     ports:
       - "3000:3000"
+
+networks:
+  ship:
+    name: ship_network
