@@ -28,6 +28,15 @@ Just fork or clone and push repository into your own repo. Rename [SHIP_README.m
 
 You can read develoment details [here](SHIP_README.md) — that will become a primary readme of your landing site.
 
+## Start
+
+In order to start nextjs server in the docker container you can use bash file `./bin/start.sh`:
+```bash
+$ ./bin/start.sh
+```
+
+Also, you need REST api server on several pages (sigun, signin). If you are using `paralect/koa-api-starter` then you can start this server using the corresponding command. Or you can start any other REST api server on port `3001`.
+
 ## Demo
 
 Demo is available as part of [Ship](https://github.com/paralect/ship) [here](http://ship-demo.paralect.com/).
