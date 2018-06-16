@@ -1,3 +1,9 @@
+## v2.2.0 (2018-05-14)
+
+- Fix component `button-link`
+- Add start script
+- Fix errors in browser Edge
+
 ## v2.1.0 (2018-05-14)
 
 - Update design
