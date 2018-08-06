@@ -1,11 +1,11 @@
 const { join } = require('path');
 
 const postcssImport = require('postcss-import');
-const postcssCssNext = require('postcss-cssnext');
-const cssnano = require('cssnano');
+const postcssPresetEnv = require('postcss-preset-env');
 const postcssNested = require('postcss-nested');
-const postcssHexrgba = require('postcss-hexrgba');
-const lost = require('lost');
+const postcssNormalize = require('postcss-normalize');
+
+const cssnano = require('cssnano');
 
 module.exports = {
   plugins: [
@@ -14,11 +14,19 @@ module.exports = {
       path: ['styles'],
     }),
     postcssNested,
-    postcssCssNext,
-    postcssHexrgba,
+    postcssNormalize(),
+    postcssPresetEnv({
+      stage: 2,
+      features: {
+        'custom-media-queries': true,
+        'custom-properties': {
+          appendVariables: false,
+          preserve: false, // use true when will be fixed bug with duplicate root variables
+        },
+      },
+    }),
     cssnano({
       zindex: false,
     }),
-    lost,
   ],
 };
