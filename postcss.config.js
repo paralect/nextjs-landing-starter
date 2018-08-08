@@ -3,7 +3,6 @@ const { join } = require('path');
 const postcssImport = require('postcss-import');
 const postcssPresetEnv = require('postcss-preset-env');
 const postcssNested = require('postcss-nested');
-const postcssNormalize = require('postcss-normalize');
 
 const cssnano = require('cssnano');
 
@@ -14,7 +13,6 @@ module.exports = {
       path: ['styles'],
     }),
     postcssNested,
-    postcssNormalize(),
     postcssPresetEnv({
       stage: 2,
       features: {

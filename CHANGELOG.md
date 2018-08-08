@@ -1,3 +1,8 @@
+## v2.3.0 (2018-08-08)
+
+- Replace `postcss-cssnext` with `postcss-preset-env`
+- Update npm dependencies
+
 ## v2.2.0 (2018-05-14)
 
 - Fix component `button-link`
