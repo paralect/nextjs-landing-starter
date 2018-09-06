@@ -6,7 +6,7 @@
   ],
   "plugins": [
     [
-      "inline-react-svg",
+      "babel-plugin-inline-react-svg",
       {
         "svgo": {
           "plugins": [
@@ -18,7 +18,7 @@
       }
     ],
     [
-      "module-resolver",
+      "babel-plugin-module-resolver",
       {
         "alias": {
           "~": "./src/client"
