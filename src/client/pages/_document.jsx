@@ -11,8 +11,8 @@ export default class CustomDocument extends Document {
           <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
           <link rel="shortcut icon" href="static/favicon.ico" />
           <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet" />
-          <link rel="stylesheet" href="/_next/static/style.css" />
         </Head>
+
         <body>
           <Main />
           <NextScript />
