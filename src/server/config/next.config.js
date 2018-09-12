@@ -8,7 +8,7 @@ module.exports = withCSS({
   cssModules: true,
   cssLoaderOptions: {
     camelCase: true,
-    localIdentName: '[local]___[hash:base64:5]',
+    localIdentName: '[local]__[hash:base64:5]',
   },
   dev: isDev,
   dir: resolve('./../../client'),
