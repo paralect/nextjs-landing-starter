@@ -49,16 +49,16 @@
     "stylelint-config-standard": "18.2.0"
   },
   "devDependencies": {
-    "@paralect/eslint-config": "0.2.0",
+    "@paralect/eslint-config": "1.0.0",
     "all-contributors-cli": "6.2.0",
-    "babel-eslint": "8.2.5",
+    "babel-eslint": "9.0.0",
     "babel-plugin-inline-react-svg": "1.1.0",
     "babel-plugin-module-resolver": "3.2.0",
     "css-loader": "2.1.1",
-    "eslint": "4.19.1",
-    "eslint-plugin-import": "2.14.0",
-    "eslint-plugin-jsx-a11y": "6.1.1",
-    "eslint-plugin-react": "7.11.1",
+    "eslint": "5.16.0",
+    "eslint-plugin-import": "2.16.0",
+    "eslint-plugin-jsx-a11y": "6.2.1",
+    "eslint-plugin-react": "7.12.4",
     "extracted-loader": "1.0.7",
     "postcss-loader": "3.0.0"
   }
