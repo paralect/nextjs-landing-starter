@@ -75,6 +75,7 @@ module.exports = (
         modules: cssModules,
         sourceMap: dev,
         importLoaders: loaders.length + (postcssLoader ? 1 : 0),
+        exportOnlyLocals: isServer
       },
       cssLoaderOptions,
     ),
