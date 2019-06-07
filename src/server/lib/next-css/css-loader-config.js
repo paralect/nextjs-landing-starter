@@ -68,13 +68,14 @@ module.exports = (
   }
 
   const cssLoader = {
-    loader: isServer ? 'css-loader/locals' : 'css-loader',
+    loader: 'css-loader',
     options: Object.assign(
       {},
       {
         modules: cssModules,
         sourceMap: dev,
         importLoaders: loaders.length + (postcssLoader ? 1 : 0),
+        exportOnlyLocals: isServer
       },
       cssLoaderOptions,
     ),
