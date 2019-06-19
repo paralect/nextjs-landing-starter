@@ -1,3 +1,9 @@
+## v2.4.0 (2019-06-20)
+
+- Update modules
+- Fix production build
+- Update node version to 10.16.0 LTS
+
 ## v2.3.0 (2018-08-08)
 
 - Replace `postcss-cssnext` with `postcss-preset-env`
