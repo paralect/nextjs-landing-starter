@@ -7,8 +7,10 @@ const { apiUrl, webUrl, isDev } = require('./index');
 module.exports = withCSS({
   cssModules: true,
   cssLoaderOptions: {
-    camelCase: true,
-    localIdentName: '[local]__[hash:base64:5]',
+    localsConvention: 'camelCase',
+    modules: {
+      localIdentName: '[local]_[hash:base64:5]',
+    },
   },
   dev: isDev,
   dir: resolve('./../../client'),
