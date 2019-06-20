@@ -1,6 +1,6 @@
 pipeline:
   run-tests:
-    image: node:8.9
+    image: node:10.16.0
     commands:
       - ./bin/drone-tests.sh
     when:
