@@ -15,7 +15,7 @@ import { states } from '~/constants';
 import { setFormValue } from '~/helpers';
 import { resetPassword } from '~/resources/account/account.api';
 
-import styles from './styles.pcss';
+import styles from './reset-password.styles.pcss';
 
 export default class ResetPassword extends PureComponent {
   static propTypes = {

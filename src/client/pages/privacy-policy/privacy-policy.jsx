@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import PrivacyLayout from '~/layouts/privacy';
 
-import styles from './styles.pcss';
+import styles from './privacy-policy.styles.pcss';
 
 export default class Signin extends PureComponent {
   render(props) {

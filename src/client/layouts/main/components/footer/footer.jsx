@@ -6,7 +6,7 @@ import Link from '~/components/link';
 
 import Logo from '~/static/logo.svg';
 
-import styles from './styles.pcss';
+import styles from './footer.styles.pcss';
 
 const Footer = ({ state }) => {
   const currentYear = new Date().getFullYear();

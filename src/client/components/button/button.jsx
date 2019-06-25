@@ -4,7 +4,7 @@ import classnames from 'classnames';
 
 import { states } from '~/constants';
 
-import styles from './styles.pcss';
+import styles from './button.styles.pcss';
 
 export const sizes = {
   small: 'small',

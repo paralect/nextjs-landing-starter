@@ -8,7 +8,7 @@ import HeaderContent from './components/header-content';
 import Content from './components/content';
 import Footer from './components/footer';
 
-import styles from './styles.pcss';
+import styles from './main.styles.pcss';
 
 const Layout = ({ children, className, state }) => {
   return (
