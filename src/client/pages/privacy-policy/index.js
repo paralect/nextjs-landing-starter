@@ -1,3 +1,3 @@
-import Signin from './privacy-policy.styles.pcss';
+import PrivacyPolicy from './privacy-policy';
 
-export default Signin;
+export default PrivacyPolicy;

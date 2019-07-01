@@ -1,3 +1,3 @@
-import Signin from './terms';
+import Terms from './terms';
 
-export default Signin;
+export default Terms;

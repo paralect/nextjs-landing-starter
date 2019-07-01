@@ -5,7 +5,7 @@ import PrivacyLayout from '~/layouts/privacy';
 
 import styles from './terms.styles.pcss';
 
-export default class Signin extends PureComponent {
+export default class Terms extends PureComponent {
   render(props) {
     return (
       <PrivacyLayout>

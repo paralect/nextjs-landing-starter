@@ -1,3 +1,3 @@
-import Layout from './main';
+import MainLayout from './main';
 
-export default Layout;
+export default MainLayout;

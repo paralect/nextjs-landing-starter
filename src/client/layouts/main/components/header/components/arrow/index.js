@@ -1,3 +1,3 @@
-import FaHeart from './arrow';
+import Arrow from './arrow';
 
-export default FaHeart;
+export default Arrow;
