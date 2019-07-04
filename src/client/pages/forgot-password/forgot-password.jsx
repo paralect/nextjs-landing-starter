@@ -13,7 +13,7 @@ import { states } from '~/constants';
 import { setFormValue } from '~/helpers';
 import { forgotPassword } from '~/resources/account/account.api';
 
-import styles from './styles.pcss';
+import styles from './forgot-password.styles.pcss';
 
 export default class ForgotPassword extends PureComponent {
   static emailSent() {

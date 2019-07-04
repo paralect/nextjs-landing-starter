@@ -14,7 +14,7 @@ import { states } from '~/constants';
 import { setFormValue } from '~/helpers';
 import { signin } from '~/resources/account/account.api';
 
-import styles from './styles.pcss';
+import styles from './signin.styles.pcss';
 
 const {
   publicRuntimeConfig: { webUrl },

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { ApiError } from '~/helpers/api';
 
-import styles from './styles.pcss';
+import styles from './error.styles.pcss';
 
 const defaultMessage = 'Unexpected error occurred';
 

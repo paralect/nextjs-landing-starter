@@ -9,7 +9,7 @@ import { states } from '~/constants';
 import Logo from '~/static/logo.svg';
 import ArrowSvg from './components/arrow';
 
-import styles from './styles.pcss';
+import styles from './header.styles.pcss';
 
 const Header = ({ state }) => (
   <nav className={styles.nav}>

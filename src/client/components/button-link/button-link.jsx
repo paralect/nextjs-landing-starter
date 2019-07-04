@@ -5,7 +5,7 @@ import classnames from 'classnames';
 import Link from '~/components/link';
 import Button, { sizes } from '~/components/button';
 
-import styles from './styles.pcss';
+import styles from './button-link.styles.pcss';
 
 const ButtonLink = ({
   href,
