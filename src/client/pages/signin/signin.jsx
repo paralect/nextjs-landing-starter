@@ -6,6 +6,7 @@ import Error from '~/components/error';
 import Button from '~/components/button';
 import Form, { Wrap } from '~/components/form';
 import Input from '~/components/input';
+import SignUpGoogle from '~/components/signup-google';
 
 import Layout from '~/layouts/main';
 import Auth from '~/layouts/auth';
@@ -109,6 +110,8 @@ export default class Signin extends PureComponent {
                   </Link>
                 </div>
               </Form>
+
+              <SignUpGoogle />
             </Wrap>
           </Auth>
         </Layout.HeaderContent>

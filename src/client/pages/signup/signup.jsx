@@ -5,6 +5,7 @@ import Button from '~/components/button';
 import Error from '~/components/error';
 import Form, { Wrap } from '~/components/form';
 import Input from '~/components/input';
+import SignUpGoogle from '~/components/signup-google';
 
 import Layout from '~/layouts/main';
 import Auth from '~/layouts/auth';
@@ -141,8 +142,9 @@ export default class Signup extends PureComponent {
                   >
                     Join
                   </Button>
-
                 </Form>
+
+                <SignUpGoogle />
               </Wrap>
             )}
             <img alt="signup" src="/static/postman.jpg" />
