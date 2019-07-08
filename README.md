@@ -2,7 +2,7 @@
 
 [![Stack](https://raw.githubusercontent.com/paralect/stack/master/stack-component-template/stack.png)](https://github.com/paralect/stack)
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
+[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors)
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg?style=flat-square)](LICENSE)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 [![Build Status](http://product-stack-ci.paralect.com/api/badges/paralect/nextjs-landing-starter/status.svg)](http://product-stack-ci.paralect.com/paralect/nextjs-landing-starter)
@@ -75,8 +75,8 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore -->
-| [<img src="https://avatars3.githubusercontent.com/u/2302873?v=4" width="100px;"/><br /><sub><b>Ihar</b></sub>](https://github.com/IharKrasnik)<br />[💻](https://github.com/paralect/nextjs-landing-starter/commits?author=IharKrasnik "Code") [🎨](#design-IharKrasnik "Design") [📖](https://github.com/paralect/nextjs-landing-starter/commits?author=IharKrasnik "Documentation") [🤔](#ideas-IharKrasnik "Ideas, Planning, & Feedback") [👀](#review-IharKrasnik "Reviewed Pull Requests") | [<img src="https://avatars2.githubusercontent.com/u/6461311?v=4" width="100px;"/><br /><sub><b>Evgeny Zhivitsa</b></sub>](https://github.com/ezhivitsa)<br />[💻](https://github.com/paralect/nextjs-landing-starter/commits?author=ezhivitsa "Code") [🎨](#design-ezhivitsa "Design") [👀](#review-ezhivitsa "Reviewed Pull Requests") |
-| :---: | :---: |
+<table><tr><td align="center"><a href="https://github.com/IharKrasnik"><img src="https://avatars3.githubusercontent.com/u/2302873?v=4" width="100px;" alt="Ihar"/><br /><sub><b>Ihar</b></sub></a><br /><a href="https://github.com/paralect/nextjs-landing-starter/commits?author=IharKrasnik" title="Code">💻</a> <a href="#design-IharKrasnik" title="Design">🎨</a> <a href="https://github.com/paralect/nextjs-landing-starter/commits?author=IharKrasnik" title="Documentation">📖</a> <a href="#ideas-IharKrasnik" title="Ideas, Planning, & Feedback">🤔</a> <a href="#review-IharKrasnik" title="Reviewed Pull Requests">👀</a></td><td align="center"><a href="https://github.com/ezhivitsa"><img src="https://avatars2.githubusercontent.com/u/6461311?v=4" width="100px;" alt="Evgeny Zhivitsa"/><br /><sub><b>Evgeny Zhivitsa</b></sub></a><br /><a href="https://github.com/paralect/nextjs-landing-starter/commits?author=ezhivitsa" title="Code">💻</a> <a href="#design-ezhivitsa" title="Design">🎨</a> <a href="#review-ezhivitsa" title="Reviewed Pull Requests">👀</a></td><td align="center"><a href="https://github.com/Mar1nka"><img src="https://avatars1.githubusercontent.com/u/25400321?v=4" width="100px;" alt="Mar1nka"/><br /><sub><b>Mar1nka</b></sub></a><br /><a href="https://github.com/paralect/nextjs-landing-starter/commits?author=Mar1nka" title="Code">💻</a> <a href="#ideas-Mar1nka" title="Ideas, Planning, & Feedback">🤔</a></td></tr></table>
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
