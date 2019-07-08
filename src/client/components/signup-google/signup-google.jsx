@@ -1,9 +1,9 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
+import getConfig from 'next/config';
 
 import classnames from 'classnames';
 import styles from './signup-google.styles.pcss';
-import getConfig from 'next/config';
 
 const {
   publicRuntimeConfig: { apiUrl },

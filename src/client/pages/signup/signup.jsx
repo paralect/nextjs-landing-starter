@@ -51,11 +51,18 @@ export default class Signup extends PureComponent {
       isLoading: true,
     });
     try {
+      const {
+        email,
+        firstName,
+        lastName,
+        password,
+      } = this.state;
+
       const signupResult = await signup({
-        firstName: this.state.firstName,
-        lastName: this.state.lastName,
-        email: this.state.email,
-        password: this.state.password,
+        firstName,
+        lastName,
+        email,
+        password,
       });
 
       this.setState({
@@ -72,9 +79,20 @@ export default class Signup extends PureComponent {
   }
 
   render() {
-    const devVerifyEmailLink = this.state._signupToken ?
-      `${apiUrl}/account/verifyEmail/${this.state._signupToken}` :
-      null;
+    const {
+      _signupToken,
+      signupSuccess,
+      email,
+      firstName,
+      lastName,
+      password,
+      error,
+      isLoading,
+    } = this.state;
+
+    const devVerifyEmailLink = _signupToken
+      ? `${apiUrl}/account/verifyEmail/${_signupToken}`
+      : null;
 
     const devVerifyEmailLinkEl = devVerifyEmailLink && (
       <a href={devVerifyEmailLink}> Verify email (dev) </a>
@@ -84,11 +102,13 @@ export default class Signup extends PureComponent {
       <Layout state={states.green}>
         <Layout.HeaderContent state={states.green}>
           <Auth className={styles.panel}>
-            {this.state.signupSuccess ? (
+            {signupSuccess ? (
               <div className={styles['signup-success']}>
                 <h2>Thank you for signing up!</h2>
                 <p>
-                  The verification email has been sent to {this.state.email}. <br />
+                  The verification email has been sent to
+                  {email}.
+                  <br />
                   Please follow the instructions from the email to complete a signup process.
                 </p>
                 {devVerifyEmailLinkEl}
@@ -101,7 +121,7 @@ export default class Signup extends PureComponent {
                   <div className={styles.names}>
                     <Input
                       key="first-name"
-                      value={this.state.firstName}
+                      value={firstName}
                       onChange={this.setFirstName}
                       required
                       type="text"
@@ -109,7 +129,7 @@ export default class Signup extends PureComponent {
                     />
                     <Input
                       key="last-name"
-                      value={this.state.lastName}
+                      value={lastName}
                       onChange={this.setLastName}
                       required
                       type="text"
@@ -118,7 +138,7 @@ export default class Signup extends PureComponent {
                   </div>
                   <Input
                     key="email"
-                    value={this.state.email}
+                    value={email}
                     onChange={this.setEmail}
                     required
                     type="email"
@@ -126,19 +146,19 @@ export default class Signup extends PureComponent {
                   />
                   <Input
                     key="password"
-                    value={this.state.password}
+                    value={password}
                     onChange={this.setPassword}
                     required
                     type="password"
                     placeholder="Password"
                   />
 
-                  <Error error={this.state.error} />
+                  <Error error={error} />
 
                   <Button
                     className={styles.signup}
                     action="submit"
-                    isLoading={this.state.isLoading}
+                    isLoading={isLoading}
                   >
                     Join
                   </Button>
