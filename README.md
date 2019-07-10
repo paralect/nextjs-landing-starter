@@ -28,6 +28,13 @@ Just fork or clone and push repository into your own repo. Rename [SHIP_README.m
 
 You can read develoment details [here](SHIP_README.md) — that will become a primary readme of your landing site.
 
+#### Google Analytics
+
+Take tracking Id from [Google Analytics](https://analytics.google.com) and paste in `/src/server/config/environment/development.js`
+```
+gaTrackingId: 'UA-XXXXX-Y'
+```
+
 ## Start
 
 In order to start nextjs server in the docker container you can use bash file `./bin/start.sh`:
