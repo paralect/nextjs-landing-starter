@@ -1,4 +1,4 @@
-version: '3.6'  
+version: '3.6'
 services:
   landing:
     build:
@@ -7,7 +7,7 @@ services:
     networks:
       - ship
     environment:
-      NODE_ENV: development
+      NODE_ENV: production
     volumes:
       - "./src:/app/src"
     ports:
