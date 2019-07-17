@@ -21,6 +21,7 @@ const Button = ({
 }) => {
   return (
     <button
+      type="button"
       action={action}
       className={classnames(styles.button, styles[state], styles[size], className, {
         [styles.loading]: isLoading,

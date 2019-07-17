@@ -16,7 +16,10 @@ const Footer = ({ state }) => {
       <footer className={styles.footer}>
         <div>
           <Logo />
-          <div>© {currentYear}, All rights reserved</div>
+          <div>
+            ©
+            { currentYear }, All rights reserved
+          </div>
         </div>
 
         <div className={styles.links}>
