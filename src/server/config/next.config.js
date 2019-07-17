@@ -2,7 +2,12 @@ const { resolve } = require('path');
 
 const withCSS = require('../lib/next-css');
 
-const { apiUrl, webUrl, isDev } = require('./index');
+const {
+  apiUrl,
+  webUrl,
+  isDev,
+  gaTrackingId,
+} = require('./index');
 
 module.exports = withCSS({
   cssModules: true,
@@ -18,5 +23,6 @@ module.exports = withCSS({
   publicRuntimeConfig: {
     apiUrl,
     webUrl,
+    gaTrackingId,
   },
 });
