@@ -1,3 +1,7 @@
+## v2.5.1 (2019-07-22)
+
+- Fix button type
+
 ## v2.5.0 (2019-07-22)
 
 - Add 'color-mod-function' to postcssPresetEnv features
