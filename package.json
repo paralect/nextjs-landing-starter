@@ -1,6 +1,6 @@
 {
   "name": "nextjs-landing-starter",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "description": "Common landing website starter driven by next.js",
   "main": "src/server/app.js",
   "author": "Paralect",
