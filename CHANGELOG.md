@@ -1,3 +1,11 @@
+## v2.5.0 (2019-07-22)
+
+- Add 'color-mod-function' to postcssPresetEnv features
+- Update dependencies
+- Change structure of component
+- Add google authorization
+- Add google analytics
+
 ## v2.4.0 (2019-06-20)
 
 - Update modules
