@@ -104,7 +104,7 @@ export default class Signin extends PureComponent {
                 <div className={styles.submit}>
                   <Button
                     className={styles.signin}
-                    action="submit"
+                    type="submit"
                     primary
                     isLoading={isLoading}
                     state={states.blue}

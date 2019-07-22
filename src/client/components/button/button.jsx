@@ -14,15 +14,15 @@ export const sizes = {
 const Button = ({
   className,
   isLoading,
-  action,
+  type,
   state,
   size,
   children,
 }) => {
   return (
+    // eslint-disable-next-line react/button-has-type
     <button
-      type="button"
-      action={action}
+      type={type}
       className={classnames(styles.button, styles[state], styles[size], className, {
         [styles.loading]: isLoading,
       })}
@@ -36,7 +36,7 @@ const Button = ({
 Button.propTypes = {
   className: PropTypes.string,
   isLoading: PropTypes.bool,
-  action: PropTypes.string,
+  type: PropTypes.string,
   children: PropTypes.node,
   state: PropTypes.string,
   size: PropTypes.string,
@@ -45,7 +45,7 @@ Button.propTypes = {
 Button.defaultProps = {
   className: '',
   isLoading: false,
-  action: 'button',
+  type: 'button',
   children: null,
   state: states.purple,
   size: sizes.medium,

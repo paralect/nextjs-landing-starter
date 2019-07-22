@@ -157,7 +157,7 @@ export default class Signup extends PureComponent {
 
                   <Button
                     className={styles.signup}
-                    action="submit"
+                    type="submit"
                     isLoading={isLoading}
                   >
                     Join

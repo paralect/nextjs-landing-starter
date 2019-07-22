@@ -90,7 +90,7 @@ export default class ForgotPassword extends PureComponent {
         <div>
           <Button
             className={styles.submitBtn}
-            action="submit"
+            type="submit"
             primary
             isLoading={isLoading}
             state={states.purple}
