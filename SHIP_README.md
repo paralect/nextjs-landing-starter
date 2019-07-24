@@ -1,41 +1,47 @@
 # MyProduct Landing site
 
-Landing site is based on [Next.JS](https://github.com/zeit/next.js).
+Next.JS Landing Starter — is a [Next.JS](https://github.com/zeit/next.js) starter kit, which allow you start development of new landing site in matter of minutes. This repository is one of the compontents of [Stack family](https://github.com/paralect/stack) — a set of components for makers to ship better products faster 🚀. Stack is an number of open-source components, resulted from years of hard work on a number of awesome products. We carefully select, document and share our production-ready knowledge with you.
 
-## Run
+## Features
 
-`npm run development` — run landing in development mode with hot-reloading in place.
-`npm start` — run landing in production mode.
+* 😍 **Nice-looking** common basic templates for the main, login and signup pages with bindings to API. Styles are based on [PostCSS](https://github.com/postcss/postcss) with [cssnext](https://github.com/MoOx/postcss-cssnext) + [LostGrid](https://github.com/peterramsing/lost) via [css modules](https://github.com/zeit/next-plugins/tree/master/packages/next-css).
+* 🔥 **Hot reloading** with webpack
+* ⚡️ **Server side rendering**
+* 👮 **Secure** — separate client and server configuration to protect secure server-only items
 
-## Things to notice
-This starter files and code structure aimed to match other [Stack family](https://github.com/paralect/stack) starters (such as [koa-api](https://github.com/paralect/koa-api-starter) and [koa-react](https://github.com/paralect/koa-react-starter) features as much as possible.
-Next.js introduces strict file conventions while SSR requires some important limitations and rules that leads to some differences described below along with other details.
+## Getting Started
 
-1. Next.js SSR implementation **does not allow adding custom webpack loaders** ([docs](https://github.com/zeit/next.js/#customizing-webpack-config) + [issue](https://github.com/zeit/next.js/issues/1245)). That means that:
-  - It's not possible to use common css-loader, style-loader, postcss-loader to add custom extensions like `.pcss`. Next.js enforces to use `styled-jsx` or other css-in-js solutions to solve this.
-  - It's not possible to `.jsx` extension for react components and restricted only to `.js` extension.
-  - **Babel plugins should be used instead of webpack**. Extend `./.babelrc` to add your plugins. That's right – you can simply transform your css, svg or other files with custom babel plugins instead of webpack loaders. <br/>
-  You can find the examples of using `styled-jsx-plugin-postcss` to allow postcss for `styled-jsx` and `inline-react-svg` for importing svgs to react code.
+Just fork or clone and push repository into your own repo. Rename [SHIP_README.md](SHIP_README.md) into README.md. To keep your repository clean remove `CHANGELOG.md`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE` and `.drone.yml`.
 
-2. The starter has separate `client` and `server` folders containing corresponding pieces of application. <br/>
+You can read develoment details [here](SHIP_README.md) — that will become a primary readme of your landing site.
 
-   **./server** app will be rarely modified as next.js core functionality covers all the server needs and SSR requirements. `./server/app.js` defines [custom next.js server](https://github.com/zeit/next.js/#custom-server-and-routing) to work with Stack's logger and config. <br />
+#### Google Analytics
 
-   **./client** app is the main extension point.
-  - New pages must be added under `./client/pages` directory. New pages automatically become available under the endpoints that map directly to their name (for example `./client/pages/signin.js` page by default maps to `http://localhost:3002/signin` endpoint, `./client/pages/index.js` maps to the root url). Base page template is extendable via special `./client/pages/_document.js` file.
-  - Linking must be maid with `next/link` component instead of `<a />` (which also has a cool `prefetch` prop)
-  - Static content is served automatically from `./client/static` directory
-  - Place the reusable components under `./client/components`
-  - Place all kind of helpers/services/factories/[your term here] to `./client/helpers` directory
-  - Common layout is defied under `./client/layouts/main.js` and is used for all the pages. If you have multiple layouts for you app – place it here. Layout is just a regular react component with no magic.
-  - Require client files relatively to client root using path started with `~`. <br/>
-  Example: import header to pages with <br />
-  `import Header from '~/components/header'` instead of `import Header from '../components/header'`. This will help to maintain sustainability when importing files are moved around the app.
+Take tracking Id from [Google Analytics](https://analytics.google.com) and paste in `/src/server/config/environment/development.js`
+```
+gaTrackingId: 'UA-XXXXX-Y'
+```
 
-3. Configuration
-  - Next.js provides bundled webpack config that is extended with `./server/config/webpack.config.next.js` that we are using to expose client config to the browser. <br />
-  Server config is placed under `./server/config/index.js`. Client config properties are defined as subset of server's config and defined under `./server/config/client.js`. After client's config is exposed with webpack's custom configuration it becomes available for browser and you can import it with `import config from '~/config'` <br />  <br />
-  **SSR NOTE:** config secrets like oauth secret keys should be never exposed to the client side
+## Start
 
-4. Read the [main readme](https://github.com/zeit/next.js)  of next.js project and look through their [examples](https://github.com/zeit/next.js/tree/canary/examples) before starting your own app development. It is pretty compact and clear.
+In order to start nextjs server in the docker container you can use bash file `./bin/start.sh`:
+```bash
+$ ./bin/start.sh
+```
 
+Also, you need REST api server on several pages (sigun, signin). If you are using `paralect/koa-api-starter` then you can start this server using the corresponding command. Or you can start any other REST api server on port `3001`.
+
+## Why Next.JS?
+
+#### **Server-side rendering (SSR) a.k.a. [universal](https://medium.com/@mjackson/universal-javascript-4761051b7ae9) app**
+SSR is the requirement for the modern landing websites which allows the indexing of single-page applications for search engines such as google. Which means you can continue to have fun with your [favorite UI library](https://github.com/facebook/react) while having your awesome stuff seen in the web for everyone.
+
+#### **Bundled react.js + webpack**.
+Even though landing websites are often considered to consist of mostly static pages which do not require a tone of javascript code, we believe that having the same library across all your ecosystem leads to *predictable*, *clean*, *reusable* and *extendable* code.
+<br />Because the basic handling of the form input with raw JS code is not a very pleasant thing, don't you remember?
+
+#### **Prepared app structure with clearly defined conventions**
+Next.js is built to simplify the life of developers and remove boilerplate code while giving the power of the latest technologies so it fully correlates with our goals.
+
+#### Community driven and widely popular framework
+Next.js is the most popular SSR framework for react with constant updates and improvements and big number of contributors. Two heads are better than one, 20k is even better.
