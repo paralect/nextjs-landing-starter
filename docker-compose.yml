@@ -7,7 +7,7 @@ services:
     networks:
       - ship
     environment:
-      NODE_ENV: development
+      APP_ENV: development
     volumes:
       - "./src:/app/src"
     ports:
