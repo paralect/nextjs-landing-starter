@@ -39,6 +39,12 @@ const main = async () => {
       //   handle(req, res, parsedUrl);
       // }
 
+      const { pathname } = parsedUrl;
+      if (pathname === '/health') {
+        res.statusCode = 200;
+        res.end('OK');
+      }
+
       handle(req, res, parsedUrl);
     }).listen(config.port, (err) => {
       if (err) throw err;
