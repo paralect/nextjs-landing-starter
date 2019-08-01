@@ -9,14 +9,7 @@ const {
   gaTrackingId,
 } = require('./index');
 
-module.exports = withCSS({
-  cssModules: true,
-  cssLoaderOptions: {
-    localsConvention: 'camelCase',
-    modules: {
-      localIdentName: '[local]_[hash:base64:5]',
-    },
-  },
+const config = {
   dev: isDev,
   dir: resolve('./../../client'),
   isServer: true,
@@ -25,4 +18,14 @@ module.exports = withCSS({
     webUrl,
     gaTrackingId,
   },
-});
+
+  cssModules: true,
+  cssLoaderOptions: {
+    localsConvention: 'camelCase',
+    modules: {
+      localIdentName: '[local]_[hash:base64:5]',
+    },
+  },
+};
+
+module.exports = withCSS(config);

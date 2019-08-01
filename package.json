@@ -17,6 +17,7 @@
     "url": "https://github.com/paralect/nextjs-landing-starter"
   },
   "scripts": {
+    "build": "next build src/client",
     "development": "npm run next-server",
     "start": "npm run next-server",
     "next-server": "node ./src/server/app.js",
