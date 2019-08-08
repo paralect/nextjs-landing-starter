@@ -21,8 +21,9 @@ Next.JS Landing Starter — is a [Next.JS](https://github.com/zeit/next.js) star
 * 🔥 **Hot reloading** with webpack
 * ⚡️ **Server side rendering**
 * 👮 **Secure** — separate client and server configuration to protect secure server-only items
-
-## Getting Started
+* 🛠️ **Support of \*.pcss** - We use `.pcss` files for styles. But as long as `.pcss` files are not supported by `@zeit/next-css` we use a [workaround](./src/server/lib/next-css)
+#
+# Getting Started
 
 Just fork or clone and push repository into your own repo. Rename [SHIP_README.md](SHIP_README.md) into README.md. To keep your repository clean remove `CHANGELOG.md`, `CODE_OF_CONDUCT.md`, `CONTRIBUTING.md`, `LICENSE` and `.drone.yml`.
 
