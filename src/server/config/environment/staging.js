@@ -11,9 +11,9 @@ module.exports = {
     },
   },
   jwt: {
-    secret: 'production_secret',
-    audience: 'ship.production',
-    issuer: 'ship.production',
+    secret: 'staging_secret',
+    audience: 'ship.staging',
+    issuer: 'ship.staging',
   },
   apiUrl: 'http://ship-api.paralect.com',
   webUrl: 'http://ship-app.paralect.com',

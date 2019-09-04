@@ -19,7 +19,7 @@
   "scripts": {
     "build": "next build src/client",
     "development": "npm run next-server",
-    "start": "npm run next-server",
+    "start": "NODE_ENV=production npm run next-server",
     "next-server": "node ./src/server/app.js",
     "test": "run-s test:**",
     "test:eslint": "eslint  --ext js --ext jsx ./src/",
