@@ -1,6 +1,5 @@
 import React, { PureComponent } from 'react';
 import Link from 'next/link';
-import getConfig from 'next/config';
 
 import Error from '~/components/error';
 import Button from '~/components/button';
@@ -15,11 +14,7 @@ import { states } from '~/constants';
 import { setFormValue } from '~/helpers';
 import { signin } from '~/resources/account/account.api';
 
-import styles from './signin.styles.pcss';
-
-const {
-  publicRuntimeConfig: { webUrl },
-} = getConfig();
+import styles from './styles.pcss';
 
 export default class Signin extends PureComponent {
   constructor(props) {
@@ -31,9 +26,7 @@ export default class Signin extends PureComponent {
     this.state = {
       email: '',
       password: '',
-
       isLoading: false,
-
       error: null,
     };
 
@@ -42,16 +35,14 @@ export default class Signin extends PureComponent {
 
   async submitSignin(event) {
     event.preventDefault();
+
     try {
-      const { email, password } = this.state;
-
       this.setState({ isLoading: true });
-      const response = await signin({
-        email,
-        password,
-      });
 
-      window.location.href = `${webUrl}?token=${response.token}`;
+      const { email, password } = this.state;
+      const { redirectUrl } = await signin({ email, password });
+
+      window.location.href = redirectUrl;
     } catch (error) {
       this.setState({ error });
     } finally {

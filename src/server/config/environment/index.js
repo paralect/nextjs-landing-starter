@@ -9,6 +9,7 @@ let base = {
   port: process.env.PORT || 3000,
   isDev: env === 'development',
   isTest: env === 'test',
+  gaTrackingId: 'gaTrackingId',
 };
 
 const envConfig = require(`./${env}.js`); // eslint-disable-line
