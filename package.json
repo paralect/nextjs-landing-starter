@@ -27,6 +27,21 @@
     "add-contributor": "all-contributors add",
     "generate-contributors": "all-contributors generate"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx}": [
+      "eslint --ext js --ext jsx",
+      "git add"
+    ],
+    "*.pcss": [
+      "stylelint",
+      "git add"
+    ]
+  },
   "dependencies": {
     "@paralect/common-logger": "0.1.10",
     "acorn": "6.2.1",
@@ -61,6 +76,8 @@
     "eslint-plugin-jsx-a11y": "6.2.3",
     "eslint-plugin-react": "7.14.3",
     "extracted-loader": "1.0.7",
+    "husky": "4.0.0-beta.5",
+    "lint-staged": "9.5.0",
     "postcss-loader": "3.0.0"
   }
 }
