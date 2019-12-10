@@ -13,16 +13,16 @@ const api = axios.create({
 });
 
 // Do not throw errors on 'bad' server response codes
-api.interceptors.response.use(axiosConfig => axiosConfig, error => error.response);
+api.interceptors.response.use((axiosConfig) => axiosConfig, (error) => error.response);
 
 const generalError = { general: ['Unexpected Error Occurred'] };
 
 const throwApiError = ({ data, status }) => {
-  console.error('API: Error Ocurred', status, data); //eslint-disable-line
+  console.error('API: Error Ocurred', status, data); // eslint-disable-line no-console
   throw new ApiError(data, status);
 };
 
-const httpRequest = method => async (url, data) => {
+const httpRequest = (method) => async (url, data) => {
   let urlWithSlash = url;
 
   if (urlWithSlash[0] !== '/') {

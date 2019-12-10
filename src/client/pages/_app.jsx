@@ -10,7 +10,7 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props;
-    return <Component {...pageProps} />;
+    return <Component {...pageProps /* eslint-disable-line react/jsx-props-no-spreading */} />;
   }
 }
 
