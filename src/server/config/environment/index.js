@@ -12,15 +12,16 @@ let base = {
   gaTrackingId: 'gaTrackingId',
 };
 
-const envConfig = require(`./${env}.json`); // eslint-disable-line
+const envConfig = require(`./${env}.json`); // eslint-disable-line import/no-dynamic-require
 
 base = _.merge(base, envConfig || {});
 
 const loadLocalConfig = (name) => {
   const localConfigPath = path.join(__dirname, name);
   if (fs.existsSync(localConfigPath)) {
-    base = _.merge(base, require(localConfigPath)); // eslint-disable-line
-    console.log(`loaded ${localConfigPath} config`); // eslint-disable-line
+    // eslint-disable-next-line import/no-dynamic-require, global-require
+    base = _.merge(base, require(localConfigPath));
+    console.log(`loaded ${localConfigPath} config`); // eslint-disable-line no-console
   }
 };
 
