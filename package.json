@@ -49,7 +49,7 @@
     "classnames": "2.2.6",
     "cssnano": "4.1.10",
     "find-up": "4.1.0",
-    "lodash": "4.17.15",
+    "lodash": "4.17.21",
     "mini-css-extract-plugin": "0.8.0",
     "next": "9.0.2",
     "normalize.css": "8.0.1",
